@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pairing</title>
+</head>
+<body>
+
+    <h1>pairings for <span data-th-text="${food}"></span></h1>
+
+    <div data-th-each="pm: ${productMatches}">
+        <table>
+            <tr>
+                <td>
+                    <strong data-th-text="${pm.title}"></strong>
+                    - 
+                    <span data-th-text="${pm.description}"></span>
+                </td>
+                <td>
+                    <span data-th-text="${pm.id}"></span>
+                </td>
+                <td>
+                    <span data-th-text="${link}"></span>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    
+</body>
+</html>
